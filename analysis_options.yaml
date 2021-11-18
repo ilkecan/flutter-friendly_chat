@@ -1,0 +1,18 @@
+include:
+  package:flutter_lints/flutter.yaml
+  # package:lints/recommended.yaml
+
+analyzer:
+  exclude: [
+    build/**,
+    test/**,
+  ]
+  language:
+    strict-raw-types: true
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+linter:
+  rules:
+    - cancel_subscriptions
