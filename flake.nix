@@ -1,14 +1,13 @@
 {
-  description = "TODO";
+  description = "friendly_chat flutter example using flutter-nix";
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.follows = "flutter-nix/nixpkgs";
     flutter-nix = {
-      url = "path:/home/ilkecan/projects/personal/flutter";
+      url = "github:ilkecan/flutter-nix";
       inputs = {
         flake-utils.follows = "flake-utils";
-        nixpkgs.follows = "nixpkgs";
       };
     };
   };
@@ -16,11 +15,12 @@
   outputs = { nixpkgs, ... }@inputs:
     let
       inherit (inputs.flake-utils.lib)
-        defaultSystems
         eachSystem
-        ;
+      ;
 
-      supportedSystems = defaultSystems;
+      supportedSystems = [
+        "x86_64-linux"
+      ];
     in
     eachSystem supportedSystems (system:
       let
@@ -33,19 +33,19 @@
 
         inherit (pkgs)
           mkShell
-          buildFlutterPackage
+          buildFlutterApp
           ;
       in
       rec {
         packages = {
-          linux = buildFlutterPackage {
+          linux = buildFlutterApp {
             src = ./.;
             name = "friendly_chat";
             version = "1.0.0";
           };
         };
 
-        defaultPackage = packages.trivial;
+        defaultPackage = packages.linux;
 
         devShell = mkShell {
           packages = [
