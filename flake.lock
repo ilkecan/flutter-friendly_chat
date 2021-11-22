@@ -63,19 +63,35 @@
         "flake-utils": [
           "flake-utils"
         ],
+        "nix-filter": "nix-filter",
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1637325527,
-        "narHash": "sha256-WmtbkVJuSnZWmspOVqTqj1mtp4vxWfH66O+KLrBvn38=",
+        "lastModified": 1637545663,
+        "narHash": "sha256-hsWj5+oRnEtZlBqE7TZFvmVtQKgLr5KkRfjHiZrxuus=",
         "owner": "ilkecan",
         "repo": "flutter-nix",
-        "rev": "b60a1bc590c2f55d8d27ba4a9b3d01073a6c3342",
+        "rev": "76d044205a1bf1b1399865f169d9577b8c250d5e",
         "type": "github"
       },
       "original": {
         "owner": "ilkecan",
         "repo": "flutter-nix",
+        "type": "github"
+      }
+    },
+    "nix-filter": {
+      "locked": {
+        "lastModified": 1620202920,
+        "narHash": "sha256-BOkm3eKT45Dk4NNxJT0xL9NnyYeZcF+t79zPnJkggac=",
+        "owner": "numtide",
+        "repo": "nix-filter",
+        "rev": "3c9e33ed627e009428197b07216613206f06ed80",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "nix-filter",
         "type": "github"
       }
     },
