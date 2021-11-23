@@ -18,9 +18,9 @@
         eachSystem
       ;
 
-      supportedSystems = [
-        "x86_64-linux"
-      ];
+      inherit (inputs.flutter-nix)
+        supportedSystems
+      ;
     in
     eachSystem supportedSystems (system:
       let
@@ -32,12 +32,12 @@
         };
 
         inherit (pkgs)
-          buildFlutterApp
-          ;
+          flutter-nix
+        ;
       in
       rec {
         packages = {
-          linux = buildFlutterApp {
+          linux = flutter-nix.buildFlutterApp {
             src = ./.;
             name = "friendly_chat";
             version = "1.0.0";
@@ -45,6 +45,8 @@
         };
 
         defaultPackage = packages.linux;
+
+        devShell = flutter-nix.mkShell { };
       }
     );
 }
