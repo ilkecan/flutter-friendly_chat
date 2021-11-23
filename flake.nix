@@ -32,7 +32,6 @@
         };
 
         inherit (pkgs)
-          mkShell
           buildFlutterApp
           ;
       in
@@ -46,14 +45,6 @@
         };
 
         defaultPackage = packages.linux;
-
-        devShell = mkShell {
-          packages = [
-          ];
-
-          shellHook = ''
-          '';
-        };
       }
     );
 }
