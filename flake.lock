@@ -67,11 +67,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1637688604,
-        "narHash": "sha256-KDZwvPYGkWhCcIvwAaSG5TWVHT2j3VxcDdoXQpIw2ck=",
+        "lastModified": 1637689192,
+        "narHash": "sha256-PLRph2YMHtL8Qup2FC/IeZrFf8VGfZshT3UovmRc0kg=",
         "owner": "ilkecan",
         "repo": "flutter-nix",
-        "rev": "c9af0e77634fcc86c24b4bd7d6fd6867ab89c250",
+        "rev": "8940ef8bac65bbadf3185ec3c1bd5fa30d71ce9b",
         "type": "github"
       },
       "original": {
