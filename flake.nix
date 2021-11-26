@@ -46,7 +46,9 @@
 
         defaultPackage = packages.linux;
 
-        devShell = flutter-nix.mkShell { };
+        devShell = flutter-nix.mkShell {
+          enableAll = true;
+        };
       }
     );
 }
