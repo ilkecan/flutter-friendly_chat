@@ -29,6 +29,9 @@
           overlays = [
             inputs.flutter-nix.overlay
           ];
+          config = {
+            allowUnfree = true;
+          };
         };
 
         inherit (pkgs)
@@ -41,6 +44,14 @@
             src = ./.;
             name = "friendly_chat";
             version = "1.0.0";
+            platform = "linux";
+          };
+
+          web = flutter-nix.buildFlutterApp {
+            src = ./.;
+            name = "friendly_chat";
+            version = "1.0.0";
+            platform = "web";
           };
         };
 
