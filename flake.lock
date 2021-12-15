@@ -67,11 +67,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1639343292,
-        "narHash": "sha256-mDRWA2kNX8MvXk0BZzBF8E685hF75i0oRpYkB2IFAKw=",
+        "lastModified": 1639605736,
+        "narHash": "sha256-fUGgmM+CtPjgT6q4vQ8udv7I06Vekkb5/jbp7xh0dZQ=",
         "owner": "ilkecan",
         "repo": "flutter-nix",
-        "rev": "b484af764b16104c2d7b2dd7ec9e0fd189f549db",
+        "rev": "91801fd536d91c73f1af10e42a2e78496defd631",
         "type": "github"
       },
       "original": {
@@ -97,16 +97,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1637595801,
-        "narHash": "sha256-LkIMwVFKCuEqidaUdg8uxwpESAXjsPo4oCz3eJ7RaRw=",
+        "lastModified": 1639161226,
+        "narHash": "sha256-75Y08ynJDTq6HHGIF+8IADBJSVip0UyWQH7jqSFnRR8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "263ef4cc4146c9fab808085487438c625d4426a9",
+        "rev": "573095944e7c1d58d30fc679c81af63668b54056",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-unstable",
+        "ref": "nixos-21.11",
         "repo": "nixpkgs",
         "type": "github"
       }
