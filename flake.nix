@@ -55,6 +55,9 @@
 
         devShell = flutter-nix.mkShell {
           enableAll = true;
+          android = {
+            sdkPlatformApiLevels = [ 30 ];
+          };
         };
       }
     );
